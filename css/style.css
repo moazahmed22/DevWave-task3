@@ -136,31 +136,29 @@ footer,
     height: 50px;
   }
 }
+#comingSoon,
+#movies {
+  min-height: 100vh;
+}
 
 @media (max-width: 991px) {
   header {
     nav {
       ul {
-        a {
-          padding-left: 30px !important;
-        }
         .active::after,
         a::after {
           content: "";
           position: absolute;
           top: 0px;
           left: 0;
-          width: 2px;
+          width: 2px !important;
           height: 0%;
           background: var(--main-color);
           transition: height 0.3s ease-in-out;
-          transition-delay: 0.5s;
+          transition-delay: 0.4s;
         }
         .active::after {
           height: 100% !important;
-        }
-        a:hover::after {
-          width: 2px;
         }
       }
     }

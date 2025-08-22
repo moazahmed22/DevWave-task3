@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Movie App</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navId">
+  <body data-bs-spy="scroll" data-bs-target="#navId" tabindex="0">
     <header class="position-fixed top-0 end-0 start-0 z-3 py-2">
       <div class="container">
         <nav
           id="navId"
-          tabindex="0"
           class="navbar navbar-expand-lg bg-transparent justify-content-between"
         >
           <a class="navbar-brand" href="#"
@@ -112,7 +111,7 @@
         </h2>
         <div
           id="moviesContainer"
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
         ></div>
       </div>
     </section>
@@ -122,7 +121,7 @@
         <h2 class="fs-5 text-uppercase position-relative mb-5">coming soon</h2>
         <div
           id="comingSoonContainer"
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
         ></div>
       </div>
     </section>
@@ -217,6 +216,6 @@
       </p>
     </section>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./js/index.js" differ></script>
+    <script type="module" src="./js/index.js" defer></script>
   </body>
 </html>
