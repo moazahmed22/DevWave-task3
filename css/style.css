@@ -1,0 +1,142 @@
+:root {
+  --main-color: #ff2c1f;
+  --text-color: #020307;
+  --bg-color: #fff;
+}
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--bg-color);
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--text-color);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 6px;
+  }
+}
+h3 {
+  font-size: clamp(1rem, 4vw, 9rem);
+}
+
+/* utilities */
+
+.text-accent {
+  color: var(--main-color) !important;
+}
+.bg-accent {
+  background: var(--main-color) !important;
+}
+
+/* custom */
+header {
+  background-color: #00000000;
+  transition: all 0.3s ease-in-out;
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--main-color);
+  }
+  ul {
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: var(--main-color);
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+  }
+}
+.scrolled {
+  background-color: var(--bg-color);
+  .navbar-brand span {
+    color: var(--text-color);
+  }
+}
+#home {
+  background: url("../assets/images/home3.jpg") no-repeat top / cover;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(230, 60%, 2%, 0.5);
+    z-index: 0;
+  }
+}
+#home,
+header {
+  .container {
+    min-width: 80% !important;
+  }
+}
+#movies,
+#comingSoon,
+#newsLetter,
+footer,
+.copyrights {
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding-top: 74px;
+  h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+  }
+  .inner {
+    .image-container {
+      transition: all 0.2s ease-in-out;
+      min-height: 355.547px;
+      overflow: hidden;
+      img {
+        transform: translateY(0px);
+      }
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .inner:hover {
+    .image-container {
+      transform: translateY(-7px);
+    }
+  }
+}
+.subscribe {
+  max-width: fit-content;
+}
+.brand-socials {
+  li {
+    width: 50px;
+    height: 50px;
+  }
+}

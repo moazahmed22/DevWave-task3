@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/awesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Movie App</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navId">
+    <header class="position-fixed top-0 end-0 start-0 z-3 py-2">
+      <div class="container">
+        <nav
+          id="navId"
+          tabindex="0"
+          class="navbar navbar-expand-lg bg-transparent justify-content-between"
+        >
+          <a class="navbar-brand" href="#"
+            ><i class="fa-solid fa-film text-accent me-2"></i
+            ><span class="text-capitalize fw-bold fs-5 text-white"
+              >movies</span
+            ></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-grow-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 text-capitalize gap-5">
+              <li class="nav-item me-4">
+                <a
+                  class="nav-link text-accent position-relative px-0"
+                  aria-current="page"
+                  href="#home"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item me-4">
+                <a
+                  class="nav-link text-accent position-relative px-0"
+                  aria-current="page"
+                  href="#movies"
+                  >movies</a
+                >
+              </li>
+              <li class="nav-item me-4">
+                <a
+                  class="nav-link text-accent position-relative px-0"
+                  aria-current="page"
+                  href="#comingSoon"
+                  >coming soon</a
+                >
+              </li>
+              <li class="nav-item me-4">
+                <a
+                  class="nav-link text-accent position-relative px-0"
+                  aria-current="page"
+                  href="#newsLetter"
+                  >newsletter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="" class="btn bg-accent text-white text-capitalize py-2 px-4"
+            >sign in</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- home -->
+    <section
+      id="home"
+      class="home vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container position-relative z-1">
+        <div
+          class="d-flex flex-column gap-1 justify-content-start align-items-start"
+        >
+          <p class="text-white m-0">Marvel Universe</p>
+          <h3 class="fw-bolder mb-4">
+            <span class="d-inline-block mb-3">Spider-Man</span><br />
+            <span>Far From Home</span>
+          </h3>
+          <a href="" class="btn bg-accent text-white text-capitalize py-2 px-4"
+            >book now</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- movies -->
+    <section id="movies" class="movies min-vh-100">
+      <div class="container position-relative">
+        <h2 class="fs-5 text-uppercase position-relative mb-5">
+          opening this week
+        </h2>
+        <div
+          id="moviesContainer"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
+        ></div>
+      </div>
+    </section>
+    <!-- coming soon -->
+    <section id="comingSoon" class="coming-soon min-vh-100">
+      <div class="container position-relative">
+        <h2 class="fs-5 text-uppercase position-relative mb-5">coming soon</h2>
+        <div
+          id="comingSoonContainer"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
+        ></div>
+      </div>
+    </section>
+    <!-- newsletter -->
+    <section id="newsLetter" class="news-letter">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="subscribe d-flex flex-column gap-4">
+          <h2 class="text-capitalize text-center mb-0 d-inline-block">
+            subscribe to get <br />
+            newsletter
+          </h2>
+          <form>
+            <div class="input-group mb-3 px-2 py-2 bg-white rounded-2">
+              <input
+                type="email"
+                class="form-control bg-transparent border-0"
+                placeholder="Enter Email ..."
+                aria-label="Enter Email ..."
+                aria-describedby="basic-addon2"
+              />
+              <a
+                class="btn bg-accent text-white text-uppercase fw-bold py-2 px-4 rounded-2"
+                id="basic-addon2"
+                >subscribe</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a class="text-decoration-none" href="#">
+            <i class="fa-solid fa-film text-accent me-2"></i>
+            <span class="text-capitalize fw-bold fs-5 text-white">movies</span>
+          </a>
+          <ul class="d-flex gap-3 p-0 brand-socials">
+            <li
+              class="d-flex justify-content-center align-items-center bg-white rounded-circle p-1"
+            >
+              <a
+                href=""
+                class="d-flex justify-content-center align-items-center text-decoration-none"
+                ><div
+                  class="fa-solid fa-brands fa-facebook fs-1 text-accent"
+                ></div
+              ></a>
+            </li>
+            <li
+              class="d-flex justify-content-center align-items-center bg-white rounded-circle p-2"
+            >
+              <a
+                href=""
+                class="d-flex justify-content-center align-items-center text-decoration-none"
+                ><div
+                  class="fa-solid fa-brands fa-instagram fs-1 text-accent"
+                ></div
+              ></a>
+            </li>
+            <li
+              class="d-flex justify-content-center align-items-center bg-white rounded-circle p-2"
+            >
+              <a
+                href=""
+                class="d-flex justify-content-center align-items-center text-decoration-none"
+                ><div
+                  class="fa-solid fa-brands fa-twitter fs-3 text-accent"
+                ></div
+              ></a>
+            </li>
+            <li
+              class="d-flex justify-content-center align-items-center bg-white rounded-circle p-2"
+            >
+              <a
+                href=""
+                class="d-flex justify-content-center align-items-center text-decoration-none"
+                ><div
+                  class="fa-solid fa-brands fa-tiktok fs-3 text-accent"
+                ></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <section class="copyrights">
+      <p class="text-center text-capitalize m-0">
+        © <span class="text-accent">dev wave</span>
+        all right reserved.
+      </p>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/index.js" differ></script>
+  </body>
+</html>
