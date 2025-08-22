@@ -136,10 +136,6 @@ footer,
     height: 50px;
   }
 }
-#comingSoon,
-#movies {
-  min-height: 100vh;
-}
 
 @media (max-width: 991px) {
   header {
